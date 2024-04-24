@@ -1,0 +1,11 @@
+touch d.txt helpers.py helpers2.py README.md
+git add d.txt | git commit -m " add d.txt"
+git add README.md | git commit -m " add README.md"
+
+git add helpers.py | git commit -m " add helpers1"
+git add helpers2.py | git commit -m " add helpers2"
+
+git rebase -i HEAD~N
+$replace pick by squash for commit that you want to regroup
+
+git log --oneline
